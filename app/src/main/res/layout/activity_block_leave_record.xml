@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/lelrel"
+        android:layout_width="match_parent"
+        android:background="#0DB5BA"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/leftarrow"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="12dp"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:text="LEAVE RECORD" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/no_net"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/lere"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_internet"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grievance"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Could Not Connect"
+
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+          android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+        <LinearLayout
+            android:id="@+id/letret"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight=".28"
+           android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/to_date"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+
+                android:text="Tap to retry"
+                android:layout_centerVertical="true"
+
+                android:background="@android:color/transparent"
+
+
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:id="@+id/t_date"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+
+                android:src="@drawable/loading" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+
+        android:id="@+id/simpleSwipeRefreshLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPrueba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

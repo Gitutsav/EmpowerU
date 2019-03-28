@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   android:id="@+id/navi_header_crp"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#0DB5BA">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:contentDescription="hello"
+
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="100dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="crp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="crp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="#ffffff">
+
+        <ImageButton
+            android:id="@+id/att"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/att"></ImageButton>
+
+        <TextView
+            android:layout_width="87dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/att"
+            android:layout_gravity="top"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="50dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="ATTENDANCE"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:textStyle="bold"></TextView>
+        </FrameLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

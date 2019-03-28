@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:background="#f4f4f4" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Mark Teachers's Attendance"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/package_lst"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    />
+
+
+            <FrameLayout
+                android:id="@+id/framelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+
+                android:backgroundTint="#aabbcc">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="#1e9c9b9b"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#aabbcc"
+                    android:fadingEdge="vertical"
+                    android:focusableInTouchMode="true"
+                    android:textAlignment="center"
+                    android:textDirection="firstStrong"
+                    android:touchscreenBlocksFocus="true"
+                    >
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Remark"
+                    android:text=""
+                    android:inputType="textMultiLine" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submitx"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#AD3228  "
+                    android:text="SUBMIT"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

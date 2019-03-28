@@ -1,0 +1,4 @@
+#Fri Jul 20 03:02:31 IST 2018
+base.0=D\:\\UTSAV\\Utsav_final_empoweru\\EMPOWERU\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

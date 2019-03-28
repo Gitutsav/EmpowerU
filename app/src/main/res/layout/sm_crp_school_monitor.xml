@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#f4f4f4" >
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="School Monitoring"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="40"
+                    android:layout_height="30dp"
+                    android:text="Select Language"
+                    android:layout_gravity="center_vertical"
+
+                    android:textSize="15dp"
+
+                    android:textColor="#000000"
+
+                    />
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:layout_height="60dp">
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_above="@+id/view_below" >
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+
+                            android:text="English" />
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Oriya" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Monitor Type"
+                android:layout_marginTop="4dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+
+                />
+            <Spinner
+                android:id="@+id/spinner0"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+
+                />
+
+
+            <Button
+                android:id="@+id/buttontest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Cluster"
+                android:layout_marginTop="7dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+
+                />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="School"
+                android:layout_marginTop="7dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+
+                />
+            <Spinner
+                android:id="@+id/spinner3"
+
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/package_lst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="If you find any other issue then select issue category and capture picture and give remark"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"></TextView>
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+
+                />
+
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/mybordertabbed"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="bottom"
+                    android:textSize="23dp"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine"
+                    android:text="Add students pic studying in class room"
+                    android:layout_marginTop="6dp"
+                    android:textAlignment="center"
+                    android:textColor="#82AF76"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imagebutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="6dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/imageborder"
+                    android:src="@drawable/cameraimage"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140dp"
+                    android:textSize="10dp"
+                    android:gravity="bottom"
+                    android:text="Can't submit attendence without attaching pic"
+                    android:textAlignment="center"
+                    android:textColor="#AD3228"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/framelayoutcross"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                >
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="200dp"
+                    android:layout_height="0dip"
+                    android:layout_weight="85"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/txtvwcross"
+                    android:layout_width="128dp"
+                    android:layout_height="0dip"
+                    android:layout_weight="20"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20dp"
+                    android:gravity="bottom"
+                    android:text="Retake"
+                    android:background="#55A1A4  "
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="5dp"
+                    android:background="#1e9c9b9b"
+                    android:layout_gravity="center_horizontal"
+                    android:textColorHint="#aabbcc"
+                    android:fadingEdge="vertical"
+                    android:focusableInTouchMode="true"
+                    android:textAlignment="center"
+                    android:textDirection="firstStrong"
+                    android:touchscreenBlocksFocus="true"
+                    >
+
+                    <EditText
+                        android:id="@+id/remarkltpic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Remark"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxLength="1000"
+                        android:maxLines="10"
+                        android:text=""
+                         />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/framelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:backgroundTint="#aabbcc">
+
+
+            <Button
+                android:id="@+id/submitx"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="#AD3228  "
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="SUBMIT"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

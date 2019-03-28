@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.empoweru"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" />
+
+    <application
+        android:name="com.example.lenovo.empoweru.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        >
+        <activity
+            android:name="com.example.lenovo.empoweru.Splash_Screen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppFullScreenTheme"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lenovo.empoweru.Dashboard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.lenovo.empoweru.Profiledetails"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.Tabbedteacher"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.CRP_profile"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.CRP_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.lenovo.empoweru.CRP_DATA_INSERT" />
+        <activity
+            android:name="com.example.lenovo.empoweru.CRPtabbedteacherq"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name="com.example.lenovo.empoweru.expandable_test" />
+        <activity
+            android:name="com.example.lenovo.empoweru.BLOCK_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.lenovo.empoweru.Block_data_import_to_sqlite" />
+        <activity
+            android:name="com.example.lenovo.empoweru.Block_profile"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.BlockTabbedteacher"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.lenovo.empoweru.LocAlert" />
+        <activity
+            android:name="com.example.lenovo.empoweru.fragmentTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name="com.example.lenovo.empoweru.HM_import_data_to_sqlite" />
+
+        <receiver
+            android:name="com.example.lenovo.empoweru.ConnectivityReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.lenovo.empoweru.District_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.lenovo.empoweru.DistrictTabbed"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.DistrictProfile"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.radrec"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.example.lenovo.empoweru.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.example.lenovo.empoweru.LoginActivity"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.lenovo.empoweru"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.lenovo.empoweru.Camera_test"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.lenovo.empoweru.httptest" />
+        <activity android:name="com.example.lenovo.empoweru.AndroidHTTPRequestsActivity" />
+        <activity android:name="com.example.lenovo.empoweru.sendingSMS" />
+        <activity
+            android:name="com.example.lenovo.empoweru.Helpline"
+            android:label="Helpline"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.SMBlockTabbed"
+            android:label="@string/title_activity_smblock_tabbed"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.SMDistrict"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.SMCRP"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.HMleave"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.example.lenovo.empoweru.HMGrievance"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name="com.example.lenovo.empoweru.datetest" />
+        <activity
+            android:name="com.example.lenovo.empoweru.BlockLeaveRecord"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.lenovo.empoweru.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

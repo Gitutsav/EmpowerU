@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.empoweru">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        >
+        <activity
+            android:name=".Splash_Screen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppFullScreenTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Profiledetails"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".Tabbedteacher"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".CRP_profile"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".CRP_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CRP_DATA_INSERT" />
+        <activity
+            android:name=".CRPtabbedteacherq"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".expandable_test" />
+        <activity
+            android:name=".BLOCK_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Block_data_import_to_sqlite" />
+        <activity
+            android:name=".Block_profile"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".BlockTabbedteacher"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LocAlert" />
+        <activity
+            android:name=".fragmentTest"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".HM_import_data_to_sqlite" />
+
+        <receiver
+            android:name=".ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".District_nav_d"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DistrictTabbed"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Attendence"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".DistrictProfile"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".radrec"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppFullScreenTheme" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.lenovo.empoweru"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Camera_test"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".httptest" />
+        <activity android:name=".AndroidHTTPRequestsActivity" />
+        <activity android:name=".sendingSMS" />
+        <activity
+            android:name=".Helpline"
+            android:label="Helpline"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".SMBlockTabbed"
+            android:label="@string/title_activity_smblock_tabbed"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".SMDistrict"
+            android:theme="@style/AppFullScreenTheme"></activity>
+        <activity
+            android:name=".SMCRP"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".HMleave"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".HMGrievance"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity android:name=".datetest" />
+        <activity android:name=".BlockLeaveRecord"
+            android:theme="@style/AppFullScreenTheme"
+           ></activity>
+    </application>
+
+</manifest>

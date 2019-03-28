@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/radrecc"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_height="match_parent"
+        tools:ignore="InvalidId">
+        <TextView
+            android:id="@+id/package_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_gravity="fill_vertical"
+            android:maxLines="20"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:background="#0DB5BA" />
+
+        <RadioGroup
+            android:id="@+id/price_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view_below"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mybordertabbed"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:text="DATE"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:drawableRight="@drawable/downarrow"
+                android:background="@drawable/textviewmybordertabbed"/>
+
+
+        </RadioGroup>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:inputType="textMultiLine"
+        android:text="Name" />
+    <FrameLayout
+        android:id="@+id/framelayoutx"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/mybordertabbed"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="bottom"
+            android:textSize="23dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:inputType="textMultiLine"
+            android:text="Add students pic studying in class room"
+            android:layout_marginTop="6dp"
+            android:textAlignment="center"
+            android:textColor="#82AF76"
+            />
+
+        <ImageButton
+            android:id="@+id/imagebuttonx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="6dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/imageborder"
+            android:src="@drawable/cameraimage"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="140dp"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:text="Can't submit attendence without attaching pic"
+            android:textAlignment="center"
+            android:textColor="#AD3228"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/framelayoutcrossx"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:id="@+id/imageviewx"
+            android:layout_width="128dp"
+            android:layout_height="0dip"
+            android:layout_weight="80" />
+
+        <TextView
+            android:id="@+id/txtvwcross"
+            android:layout_width="128dp"
+            android:layout_height="0dip"
+            android:layout_weight="20"
+            android:gravity="center_vertical"
+            android:background="#55A1A4  "
+            android:text="Retake"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

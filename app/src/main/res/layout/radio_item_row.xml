@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="335dp"
+        android:background="@drawable/myborder"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginRight="10dp"
+        android:layout_height="155dp">
+
+        <TextView
+            android:id="@+id/cluster"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:text="Cluster"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="55dp"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginBottom="2dp"
+
+                android:background="@drawable/mybordertabbed"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_above="@+id/view_below" >
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textStyle="bold"
+                    android:text="Present" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Absent" />
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+            </RadioGroup>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">EMPOWER U</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabbed_teacher">TabbedTeacher</string>
+    <string name="title_activity_tabbedteacher">Tabbedteacher</string>
+    <string name="lbl_new_note_title">New Note</string>
+    <string name="lbl_edit_note_title">Edit Note</string>
+    <string name="hint_enter_note">Enter your note!</string>
+    <string name="title_activity_crp_nav_d">CRP_nav_d</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_crptabbed_teacher">CRPTabbedTeacher</string>
+    <string name="title_activity_crptabbedteacherq">CRPtabbedteacherq</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_block_nav_d">BLOCK_nav_d</string>
+    <string name="title_activity_block_tabbedteacher">BlockTabbedteacher</string>
+    <string name="title_activity_district_nav_d">District_nav_d</string>
+    <string name="title_activity_district_tabbed">DistrictTabbed</string>
+    <string name="title_activity_smblock_tabbed">SMBlockTabbed</string>
+    <string name="myimagetestbase64">nDSopADAsPTW5beMXMp4laa8m04j14xhEsBv6dm/UNG+3qY//9k=</string>
+
+
+</resources>

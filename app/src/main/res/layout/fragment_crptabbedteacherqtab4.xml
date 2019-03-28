@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#f4f4f4" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#f4f4f4" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/gps"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Mark Student's Attendance"
+                android:textAlignment="center"
+                android:fontFamily="monospace"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Cluster"
+                android:layout_marginTop="7dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+
+                />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="School"
+                android:layout_marginTop="7dp"
+                android:gravity="bottom"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#000000"
+
+                />
+            <Spinner
+                android:id="@+id/spinner3"
+
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:animateLayoutChanges="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="40dp"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:background="#0DB5BA"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="26"
+                    android:layout_height="match_parent"
+                    android:text="Class"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/mybordertabbed"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+
+                    />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="37"
+                    android:layout_height="match_parent"
+                    android:text="Presenties"
+                    android:background="@drawable/mybordertabbed"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+
+                    />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="37"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="Total Students"
+                    android:background="@drawable/mybordertabbed"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvPrueba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:background="#ffffff"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@drawable/mybordertabbed"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:gravity="bottom"
+                    android:textSize="23dp"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine"
+                    android:text="Add students pic studying in class room"
+                    android:layout_marginTop="6dp"
+                    android:textAlignment="center"
+                    android:textColor="#82AF76"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imagebutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="6dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/imageborder"
+                    android:src="@drawable/cameraimage"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="140dp"
+                    android:textSize="10dp"
+                    android:gravity="bottom"
+                    android:text="Can't submit attendence without attaching pic"
+                    android:textAlignment="center"
+                    android:textColor="#AD3228"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/framelayoutcross"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+
+                >
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtvwcross"
+                    android:layout_width="128dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="170dp"
+                    android:textSize="20dp"
+                    android:gravity="bottom"
+                    android:text="Retake"
+                    android:background="#55A1A4  "
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framelayout1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+
+                android:backgroundTint="#aabbcc">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:fadingEdge="vertical"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColorHint="#aabbcc"
+                    android:textDirection="firstStrong"
+                    android:theme="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:touchscreenBlocksFocus="true">
+
+                    <EditText
+                        android:id="@+id/remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:background="#DADAD4"
+                        android:hint="Enter Remark"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:theme="@style/Base.TextAppearance.AppCompat.Medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/submitx"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:background="#AD3228  "
+                    android:text="SUBMIT"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="100dp"
+                android:layout_height="1dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

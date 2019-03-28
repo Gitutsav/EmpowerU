@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#0DB5BA"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/leftarrow"/>
+    </FrameLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0DB5BA"
+        android:layout_gravity="bottom"
+        app:tabTextColor="#ffffff"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        android:elevation="10dp"
+        app:tabIndicatorColor="@color/colorAccent"
+
+
+        />
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

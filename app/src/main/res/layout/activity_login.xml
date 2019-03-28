@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:textColorHint="#aabbcc"
+            android:layout_gravity="center_horizontal"
+            android:fadingEdge="vertical"
+            android:focusableInTouchMode="true"
+            android:textAlignment="center"
+            android:textDirection="firstStrong"
+            android:touchscreenBlocksFocus="true"
+            >
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="USER ID"
+                android:text=""
+                android:inputType="number" />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:layout_gravity="center_horizontal"
+            android:textColorHint="#aabbcc"
+            android:fadingEdge="vertical"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:textAlignment="center"
+            android:textDirection="firstStrong"
+            android:touchscreenBlocksFocus="true"
+            >
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text=""
+                android:hint="PASSWORD"
+                android:inputType="numberPassword" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            android:background="#900C3F"
+            android:layout_width="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+            android:text="LOGIN"
+            android:onClick="looogin"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="38dp"
+        android:id="@+id/empoweruweb"
+        android:background="#000000"
+        android:onClick="empoweruu"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/empoweru"
+            android:paddingTop="10dp"
+            android:paddingLeft="35dp"
+            android:clickable="false"
+            android:text="Powered by : "
+            android:layout_weight="40"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/empoweru"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"></ImageButton>
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/empoweru"
+            android:clickable="false"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:text="EmpowerU.in"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

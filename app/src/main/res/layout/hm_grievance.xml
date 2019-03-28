@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="fill_parent"
+   >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Grievance"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/myborderleave"
+
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Grievance Type"
+            android:layout_marginTop="7dp"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:animateLayoutChanges="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Grievance"
+            android:layout_marginTop="7dp"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fadingEdge="vertical"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColorHint="#aabbcc"
+            android:textDirection="firstStrong"
+            android:theme="@style/Base.TextAppearance.AppCompat.Medium"
+            android:touchscreenBlocksFocus="true">
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="1000"
+                    android:maxLines="10"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/textviewmybordertabbed"
+                    android:hint="200 letters (max.)"
+                    android:textColor="#000000"
+                    android:theme="@style/Base.TextAppearance.AppCompat.Medium" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:id="@+id/framelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/mybordertabbed"
+            >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="bottom"
+                    android:textSize="23dp"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine"
+                    android:text="Add Image"
+                    android:textAlignment="center"
+                    android:textColor="#82AF76"
+                    />
+
+                <ImageButton
+                    android:id="@+id/imagebutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="6dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/imageborder"
+                    android:src="@drawable/cameraimage"
+                    />
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/framelayoutcross"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+
+            >
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="300dp"
+                    android:layout_height="170dp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtvwcross"
+                    android:layout_width="136dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="170dp"
+                    android:textSize="20dp"
+                    android:gravity="bottom"
+                    android:text="Retake"
+                    android:background="#55A1A4  "
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+        </FrameLayout>
+        <Button
+            android:id="@+id/submitx"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="#AD3228  "
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+</LinearLayout>
+
+
+
+</ScrollView>
+
+
+</LinearLayout>
