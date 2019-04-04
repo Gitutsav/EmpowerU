@@ -43,7 +43,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        >
+
         <activity
             android:name=".Splash_Screen"
             android:configChanges="orientation|keyboardHidden|screenSize"

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\UTSAV\\Utsav_final_empoweru\\EMPOWERU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "outputFile": "C:\\Users\\Utsav Gupta\\Downloads\\EMPOWERU\\EMPOWERU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.0.aar\\0af0db32b8079c6cefedeab6947a1cfb\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.0.aar\\b2b3a8c57fae1b517dc086c12d73a7aa\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

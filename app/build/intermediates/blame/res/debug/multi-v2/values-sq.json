@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\UTSAV\\Utsav_final_empoweru\\EMPOWERU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "C:\\Users\\Utsav Gupta\\Downloads\\EMPOWERU\\EMPOWERU\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\ab408b6c2b54de284a4ba0704f9c2b1a\\res\\values-sq\\values.xml",
+                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-15.0.1.aar\\9434e9b74d33122b5a0a72c4a4a1f751\\res\\values-sq\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\e028065634b0fe5ff03251393cfa6bde\\res\\values-sq\\values.xml",
+                    "source": "C:\\Users\\Utsav Gupta\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-15.0.1.aar\\1b392052f34972be96996b06be851b4c\\res\\values-sq\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
